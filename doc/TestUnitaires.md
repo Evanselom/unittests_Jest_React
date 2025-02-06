@@ -46,3 +46,66 @@ module.exports = {
 };
 
 Cela garantit que Jest est bien configuré pour un projet React moderne.
+
+**Prendre la main avec un premier test simple**
+Créer une fonction addition qui prend deux variables a et b et retourne leur somme
+
+Ecrire une fonction pour vérifier que votre fonction est bien correcte
+Ajouter un cas qui fait échouer le test
+
+
+**Test du compteur**
+
+🎯 Objectif : Tester un composant Counter avec un bouton qui incrémente un compteur.
+
+🛠 Composant Counter
+
+import { useState } from 'react';
+
+export function Counter() {
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <p>Compteur : {count}</p>
+      <button onClick={() => setCount(count + 1)}>Incrémenter</button>
+    </div>
+  );
+}
+
+**Structure des tests : Arrange, Act, Assert**
+
+🛠 Méthodologie AAA (Arrange, Act, Assert)
+
+Lors de l’écriture des tests, il est recommandé de suivre la structure AAA :
+
+Arrange (Mise en place) : Préparer l’environnement du test.
+
+Act (Action) : Exécuter l’action à tester.
+
+Assert (Vérification) : Vérifier si le comportement attendu est respecté.
+
+✨ Exemple de test avec AAA
+
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { ToggleButton } from './ToggleButton';
+
+test('Le bouton change de texte après un clic', async () => {
+  // ARRANGE : Mise en place
+  render(<ToggleButton />);
+  const button = screen.getByRole("button", { name: "OFF" });
+
+  // ACT : Action à tester
+  await userEvent.click(button);
+
+  // ASSERT : Vérification du résultat
+  expect(screen.getByRole("button", { name: "ON" })).toBeInTheDocument();
+});
+
+🎯 Pourquoi utiliser AAA ?
+
+Améliore la lisibilité et la clarté des tests.
+
+Facilite la maintenance du code de test.
+
+Permet une meilleure compréhension du processus de test.
