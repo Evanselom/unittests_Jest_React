@@ -1,4 +1,7 @@
-D'accord ! Voici un **descriptif détaillé du système** qui permettra aux apprenants de déterminer eux-mêmes les **entités**, leurs **liens** et les **cardinalités**.  
+Un **descriptif détaillé du système** de gestion de rendez-vous
+
+Objectis :
+Déterminer les **entités**, leurs **liens** et les **cardinalités**  
 
 ---
 
@@ -15,7 +18,7 @@ Le centre médical veut aussi garder une trace des **paiements** effectués par 
 
 ---
 
-### **Travail demandé aux apprenants**  
+### **Travail à effectuer**  
 1. **Déterminer les entités principales** du système.  
 2. **Identifier les liens entre les entités** (ex. un patient peut prendre plusieurs rendez-vous).  
 3. **Définir les attributs importants** de chaque entité.  
@@ -31,4 +34,4 @@ Le centre médical veut aussi garder une trace des **paiements** effectués par 
 - Un rendez-vous peut-il être modifié ou annulé ?  
 - Comment représenter le paiement d’une consultation ?  
 
-📌 **À vous de jouer !** Concevez un **Modèle Conceptuel des Données (MCD)** complet en tenant compte de toutes ces informations. 🚀
+📌 **À vous de jouer !** Concevez un **Modèle Conceptuel des Données (MCD)** complet en tenant compte des détails fourni par le service fonctionel de cet établissement
