@@ -1,4 +1,4 @@
-1. Introduction à Jest et React Testing Library
+**1. Introduction à Jest et React Testing Library**
 
 🎯 Pourquoi Jest et React Testing Library ?
 
@@ -14,7 +14,7 @@ Facilité d’intégration avec React.
 
 Meilleure simulation du comportement réel des utilisateurs.
 
-2. Installation et configuration
+**2. Installation et configuration**
 
 📌 Prérequis :
 
