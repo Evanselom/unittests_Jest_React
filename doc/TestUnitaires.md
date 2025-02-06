@@ -36,7 +36,7 @@ Pour lancer les tests :
 
 npm test
 
-⚙️ Configuration avancée
+**⚙️ Configuration avancée**
 
 Pour éviter les erreurs de Jest liées aux modules ES6, ajoute un fichier jest.config.js :
 
